@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { label: 'For Sale', href: '/for-sale/' },
   { label: 'For Rent', href: '/for-rent/' },
   { label: 'Shortlet', href: '/shortlet/' },
-  { label: 'Commercial', href: '/commercial/' },
+  { label: 'Mortgage', href: '/financing' },
   { 
     label: 'Services', 
     href: '#',
@@ -47,7 +47,7 @@ export default function Header() {
           transition-all duration-500 ease-in-out
           ${transparent
             ? 'bg-gradient-to-b from-black/60 via-black/20 to-transparent py-6'
-            : 'glass-white shadow-[0_1px_24px_rgba(69,56,117,0.08)] py-4'
+            : 'bg-white shadow-[0_1px_24px_rgba(69,56,117,0.08)] py-4'
           }
         `}
       >
@@ -60,7 +60,7 @@ export default function Header() {
               alt="BuyLetLive Logo"
               className={`
                 h-8 md:h-10 w-auto transition-all duration-300 drop-shadow-md
-                ${transparent ? 'brightness-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]' : 'invert brightness-0 opacity-90'}
+                ${transparent ? 'brightness-100 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]' : 'brightness-0'}
               `}
             />
           </Link>
@@ -188,7 +188,7 @@ export default function Header() {
             <img 
               src="/assets/logos/BuyLetLive Logo - white.png"
               alt="BuyLetLive Logo"
-              className="h-7 w-auto invert brightness-0 opacity-80"
+              className="h-7 w-auto brightness-0"
             />
             <button
               onClick={() => setIsMobileMenuOpen(false)}

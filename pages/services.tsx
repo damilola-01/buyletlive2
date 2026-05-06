@@ -181,7 +181,7 @@ export default function ServicesPage() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-mint shadow-lg">
-                  <img src="/assets/ceo/jemine.jpg" alt="Jemini Adollo" className="w-full h-full object-cover" />
+                  <img src="/assets/team/Jemine CEO BuyLetLive.jpeg" alt="Jemini Adollo" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="text-white font-bold">Jemini Adollo</p>

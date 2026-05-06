@@ -21,6 +21,7 @@ import { apiService } from '../services/api';
 import SEOExplorer from '../components/SEOExplorer';
 import { SEARCH_LOCATIONS, PROPERTY_TYPES, BED_OPTIONS, BATH_OPTIONS } from '../data/constants';
 import { motion } from 'framer-motion';
+import LeadMagnet from '../components/LeadMagnet';
 
 
 /* ════════════════════════════════════════════════════
@@ -632,7 +633,7 @@ export default function HomePage() {
                   </p>
                   <footer className="mt-5 flex items-center gap-3 not-italic">
                     <div className="w-10 h-10 rounded-full bg-brand-purple-dark overflow-hidden shrink-0">
-                      <img src="/assets/ceo/jemine.jpg" alt="Jemine Adollo" className="w-full h-full object-cover" style={{ objectPosition: 'center 15%' }} />
+                      <img src="/assets/team/Jemine CEO BuyLetLive.jpeg" alt="Jemine Adollo" className="w-full h-full object-cover" style={{ objectPosition: 'center 15%' }} />
                     </div>
                     <div>
                       <p className="font-bold text-brand-purple-dark text-sm">Jemini Adollo</p>
@@ -667,7 +668,7 @@ export default function HomePage() {
             <div className="relative animate-fade-in-up">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
                 <img 
-                  src="/assets/ceo/jemine.jpg"
+                  src="/assets/team/Jemine CEO BuyLetLive.jpeg"
                   className="w-full aspect-[4/5] object-cover"
                   style={{ objectPosition: 'center 15%' }}
                   alt="Jemini Adollo, CEO of BuyLetLive"
@@ -727,48 +728,18 @@ export default function HomePage() {
       </section>
 
       {/* ═══════════════════════════════════════════════════════════
-          10. CEO VIDEO MESSAGE
+          10. EXCLUSIVE MARKET INTELLIGENCE (LEAD MAGNET)
       ═══════════════════════════════════════════════════════════ */}
-      <section className="py-24 bg-brand-purple-dark relative overflow-hidden">
-        {/* Decorative background elements */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-mint rounded-full blur-[120px]" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-purple rounded-full blur-[120px]" />
-        </div>
-
-        <div className="max-w-5xl mx-auto px-6 md:px-12 text-center relative z-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/10 text-brand-mint rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6">
-            <Play className="w-3 h-3 fill-current" /> Executive Insights
-          </div>
-          <h2 className="text-3xl md:text-5xl font-serif mb-6 text-white leading-tight">A Message from Our Group CEO</h2>
-          <p className="text-gray-300 mb-16 max-w-2xl mx-auto text-lg font-light leading-relaxed">
-            Ola Daramola shares the <span className="text-brand-mint italic">vision</span> behind The BuyLetLive Standard and our unwavering commitment to absolute transparency in Nigerian real estate.
-          </p>
-
-          <div className="relative group max-w-4xl mx-auto mb-16">
-            <div className="absolute -inset-1 bg-gradient-to-r from-brand-mint/20 to-brand-purple/20 rounded-[2rem] blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative aspect-video rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 bg-black/40 backdrop-blur-sm">
-              <iframe
-                src="https://drive.google.com/file/d/1Z4xgmx3k-IqH-qF4Y2fbd3TENT4C63CE/preview"
-                className="w-full h-full border-0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                title="A Message from Ola Daramola, Group CEO of BuyLetLive"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <p className="text-xl font-serif text-white/80 mb-8 font-light italic">Ready to experience the standard?</p>
-            <Link 
-              href="/advisory?ref=homepage_ceo_cta" 
-              className="px-10 py-5 bg-brand-mint text-brand-purple-dark font-black uppercase tracking-widest text-xs rounded-2xl hover:scale-105 transition-all shadow-[0_0_20px_rgba(102,255,204,0.3)] flex items-center gap-3"
-            >
-              Speak to an Advisor <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      <LeadMagnet 
+        title="Lagos High-Yield Property Deals 2026"
+        description="Discover the top-performing off-market properties in Lagos. Our latest intelligence report reveals where smart money is investing for maximum ROI and long-term capital appreciation."
+        imageSrc="/images/lagos-deals-2026.png"
+        features={[
+          "Top 10 Emerging Neighbourhoods",
+          "Rental Yield Comparisons (Ikoyi vs Lekki)",
+          "Pre-vetted Off-Plan Opportunities"
+        ]}
+      />
 
       {/* ═══════════════════════════════════════════════════════════
           11. INSIGHTS & GUIDES

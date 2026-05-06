@@ -214,7 +214,7 @@ export default function SpeakToAdvisor() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                           <label className="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wider">Interest</label>
-                          <select value={form.interest} onChange={e => setForm({ ...form, interest: e.target.value })} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                          <select required value={form.interest} onChange={e => setForm({ ...form, interest: e.target.value })} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
                             <option value="">Select interest...</option>
                             <option>Buying — Residential</option>
                             <option>Buying — Commercial</option>
@@ -225,8 +225,8 @@ export default function SpeakToAdvisor() {
                           </select>
                         </div>
                         <div>
-                          <label className="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wider">Budget Range</label>
-                          <select value={form.budget} onChange={e => setForm({ ...form, budget: e.target.value })} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                          <label className="block text-xs font-semibold text-gray-700 mb-1.5 uppercase tracking-wider">Budget Range *</label>
+                          <select required value={form.budget} onChange={e => setForm({ ...form, budget: e.target.value })} className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
                             <option value="">Select budget...</option>
                             <option>Under ₦100M</option>
                             <option>₦100M – ₦250M</option>
@@ -371,7 +371,7 @@ export default function SpeakToAdvisor() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-mint shadow-lg">
-                  <img src="/assets/ceo/jemine.jpg" alt="Jemini Adollo" className="w-full h-full object-cover" />
+                  <img src="/assets/team/Jemine CEO BuyLetLive.jpeg" alt="Jemini Adollo" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <p className="text-white font-bold">Jemini Adollo</p>

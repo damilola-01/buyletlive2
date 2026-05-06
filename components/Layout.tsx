@@ -61,7 +61,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className="flex-grow">{children}</main>
 
       {/* Conditionally hide RelatedProperties on specific pages */}
-      {!['/contact', '/terms', '/about', '/real-estate-media', '/request-property', '/property-management', '/[category]/[[...slugs]]', '/', '/advisory'].includes(router.pathname) && <RelatedProperties />}
+      {!['/contact', '/terms', '/about', '/real-estate-media', '/request-property', '/property-management', '/[category]/[[...slugs]]', '/', '/advisory', '/financing', '/mortgage-apply'].includes(router.pathname) && <RelatedProperties />}
 
       {/* ── FOOTER ─────────────────────────────────────────────────────── */}
       <footer className="bg-purple-mesh text-white pt-24 pb-12 border-t border-white/10 relative overflow-hidden">

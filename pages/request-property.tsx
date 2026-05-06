@@ -130,8 +130,9 @@ export default function RequestPropertyPage() {
                           </div>
                        </div>
                       <div>
-                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Preferred Timeline</label>
-                        <select className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Preferred Timeline *</label>
+                        <select required name="timeline" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                          <option value="">Select timeline...</option>
                           <option>Immediately</option>
                           <option>Within 1-3 Months</option>
                           <option>Within 3-6 Months</option>
@@ -148,8 +149,9 @@ export default function RequestPropertyPage() {
                     <h3 className="text-xs font-bold text-brand-purple uppercase tracking-widest mb-4">Property Details</h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <div>
-                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Property Type</label>
-                        <select className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Property Type *</label>
+                        <select required name="propertyType" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                          <option value="">Select type...</option>
                           <option>Detached House</option>
                           <option>Semi-Detached House</option>
                           <option>Terraced Duplex</option>
@@ -165,8 +167,9 @@ export default function RequestPropertyPage() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-5">
                       <div>
-                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Minimum Bedrooms</label>
-                        <select className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Minimum Bedrooms *</label>
+                        <select required name="bedrooms" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                          <option value="">Select bedrooms...</option>
                           <option>Any</option>
                           <option>1+</option>
                           <option>2+</option>
@@ -176,8 +179,9 @@ export default function RequestPropertyPage() {
                         </select>
                       </div>
                       <div>
-                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Maximum Budget</label>
-                        <select className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                        <label className="block text-xs font-medium text-gray-700 mb-1.5">Maximum Budget *</label>
+                        <select required name="budget" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50">
+                          <option value="">Select budget...</option>
                           <option>Under ₦100M</option>
                           <option>₦100M – ₦250M</option>
                           <option>₦250M – ₦500M</option>
@@ -190,8 +194,8 @@ export default function RequestPropertyPage() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-medium text-gray-700 mb-1.5">Specific Features or Requirements</label>
-                    <textarea className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50" rows={4} placeholder="e.g., Must have a swimming pool, corner piece, waterfront view, minimum 2 BQs..." />
+                    <label className="block text-xs font-medium text-gray-700 mb-1.5">Specific Features or Requirements *</label>
+                    <textarea required name="requirements" className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-brand-mint focus:ring-1 focus:ring-brand-mint bg-gray-50" rows={4} placeholder="e.g., Must have a swimming pool, corner piece, waterfront view, minimum 2 BQs..." />
                   </div>
 
                   <button

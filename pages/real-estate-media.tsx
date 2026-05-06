@@ -179,18 +179,19 @@ export default function RealEstateMediaPage() {
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
-                <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="John Doe" />
+                <label className="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                <input type="text" required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="John Doe" />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
-                <input type="email" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="john@example.com" />
+                <label className="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                <input type="email" required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="john@example.com" />
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Property Type</label>
-                <select className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm appearance-none">
+                <label className="block text-sm font-medium text-gray-700 mb-2">Property Type *</label>
+                <select required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm appearance-none">
+                  <option value="">Select type</option>
                   <option>Residential</option>
                   <option>Commercial Tower</option>
                   <option>Estate Development</option>
@@ -198,12 +199,12 @@ export default function RealEstateMediaPage() {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Location/Address</label>
-                <input type="text" className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="e.g. Ikoyi, Lagos" />
+                <label className="block text-sm font-medium text-gray-700 mb-2">Location/Address *</label>
+                <input type="text" required className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="e.g. Ikoyi, Lagos" />
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Services Required</label>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Services Required *</label>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {['Photography', 'Videography', 'Drone Mapping', '3D Tour'].map(option => (
                   <label key={option} className="flex items-center gap-2 text-sm text-gray-600 bg-gray-50 border border-gray-100 p-3 rounded-lg cursor-pointer hover:bg-gray-100">
@@ -214,10 +215,10 @@ export default function RealEstateMediaPage() {
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Property Brief / Size (sqft)</label>
-              <textarea rows={4} className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="Tell us about the property style, room count, and square footage..."></textarea>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Property Brief / Size (sqft) *</label>
+              <textarea required rows={4} className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-3.5 focus:outline-none focus:border-brand-mint text-sm" placeholder="Tell us about the property style, room count, and square footage..."></textarea>
             </div>
-            <button type="button" className="w-full py-4 bg-brand-purple text-white font-bold rounded-xl hover:bg-brand-purple-dark transition-all text-sm shadow-xl shadow-brand-purple/20">
+            <button type="submit" className="w-full py-4 bg-brand-purple text-white font-bold rounded-xl hover:bg-brand-purple-dark transition-all text-sm shadow-xl shadow-brand-purple/20">
               Submit Media Brief
             </button>
           </form>
